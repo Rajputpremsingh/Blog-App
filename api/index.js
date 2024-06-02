@@ -10,6 +10,16 @@ app.use(express.json())
 app.use(userRoutes)
 app.use('/api/auth',authRoutes)
 
+app.use((err,req,res,next)=>{
+    const statuscode = err.statuscode || 500;
+    const message = err.message || 'Internal Server Error';
+    res.status(statuscode).json({
+        success : false,
+        statuscode,
+        message
+    })
+})
+
 mongoose.connect(process.env.MONGO_URL).then(
     ()=>{
         console.log("Mongodb is connected");
