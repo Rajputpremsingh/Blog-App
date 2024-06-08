@@ -1,6 +1,7 @@
 import { Alert, Button, Label, Spinner, TextInput } from "flowbite-react";
 import React, { useState } from "react";
 import { Link,useNavigate } from "react-router-dom";
+import OAuth from "../components/OAuth";
 
 const SignUp = () => {
     const navigate = useNavigate();
@@ -72,6 +73,7 @@ const SignUp = () => {
             <Button gradientDuoTone="purpleToPink" type="submit" disabled={loading}>
               {loading ? <><Spinner size="sm" /><span className="pl-3">Loading...</span></> : "Sign-Up"}
             </Button>
+            <OAuth />
           </form>
           <div className=" flex gap-2 mt-5">
             <span>Have an Account ? </span>
