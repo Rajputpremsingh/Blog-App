@@ -3,11 +3,14 @@ import mongoose from "mongoose";
 import dotenv from "dotenv"
 import userRoutes from "./routes/user.route.js";   // We can import by different name as well like here we have imported "router" as "userRoutes"
 import authRoutes from "./routes/auth.route.js"
+import cookieParser from 'cookie-parser'
+
 dotenv.config()
 
 const app = express()
 app.use(express.json())
-app.use(userRoutes)
+app.use(cookieParser())
+app.use('/api/user',userRoutes)
 app.use('/api/auth',authRoutes)
 
 app.use((err,req,res,next)=>{
