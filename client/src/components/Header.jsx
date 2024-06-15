@@ -61,11 +61,19 @@ const Header = () => {
                 ) 
                 : 
                 (
-                    <Link to='/sign-in'>
-                        <Button gradientDuoTone='purpleToBlue' outline>
-                            Sign In 
-                        </Button>
-                    </Link>
+                     path==='/sign-in' ? (
+                        <Link to='/sign-up'>
+                            <Button gradientDuoTone='purpleToBlue' outline>
+                                Sign Up 
+                            </Button>
+                        </Link>
+                    ):(
+                        <Link to='/sign-in'>
+                            <Button gradientDuoTone='purpleToBlue' outline>
+                                Sign In 
+                            </Button>
+                        </Link>
+                    )   
                 )
             }
             <Navbar.Toggle />
