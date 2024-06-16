@@ -27,7 +27,6 @@ const userSlice = createSlice({
             state.error = null
         },
         updateSuccess : (state,action)=>{
-            console.log("Redux : ",action.payload);
             state.currentUser = action.payload
             state.loading = false
             state.error = null
