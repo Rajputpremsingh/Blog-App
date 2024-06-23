@@ -42,7 +42,6 @@ export const getPosts = async (req,res,next) => {
                 }),
         }
         ).sort({updatedAt:sortDirection}).skip(startIndex).limit(limit)
-        console.log("KM");
         const totalPosts = await Post.countDocuments();
         const now = new Date();
         const oneMontAgo = new Date(
