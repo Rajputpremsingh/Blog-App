@@ -1,0 +1,35 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+.solar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://img.pikbest.com/wp/202345/real-estate-house-property-digital-depiction-of-a-website-featuring-an-isolated-3d-representing-residential-symbolizing-online-selling-agency-with-cottage-concept-in-rendering-web-page-illustration_9615825.jpg!bw700'); /* Add your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  .right-side{
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .solar-form button {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

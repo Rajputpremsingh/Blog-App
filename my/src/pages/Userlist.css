@@ -1,0 +1,105 @@
+/* Container for the user list section */
+.user-list-container {
+    background-color: #232323; /* Dark background */
+    color: white;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Tab menu styling */
+  .tab-menu {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.8;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid orange;
+    opacity: 1;
+  }
+  
+  /* Action bar styling */
+  .action-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Search input styling */
+  .search-container {
+    flex: 1;
+  }
+  
+  .search-input {
+    padding: 8px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Show dropdown button */
+  .show-container {
+    margin-left: 10px;
+  }
+  
+  .show-button {
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  /* Icon buttons */
+  .icon-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .icon-button.delete {
+    background-color: #444;
+  }
+  
+  .icon-button.share {
+    background-color: #444;
+  }
+  
+  /* Activate / Deactivate buttons */
+  .action-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .action-button.activate {
+    background-color: #28a745; /* Green for activate */
+  }
+  
+  .action-button.deactivate {
+    background-color: #dc3545; /* Red for deactivate */
+  }
+  

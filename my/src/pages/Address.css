@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .solar-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://img.pikbest.com/wp/202345/real-estate-house-property-digital-depiction-of-a-website-featuring-an-isolated-3d-representing-residential-symbolizing-online-selling-agency-with-cottage-concept-in-rendering-web-page-illustration_9615825.jpg!bw700'); /* Add your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Left side styles */
+  .left-side {
+    flex: 1;
+    color: white;
+    padding: 40px;
+  }
+  
+  .left-side h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color: #0077cc;
+    text-decoration: underline;
+  }
+  
+  .left-side ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  
+  .left-side li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .left-side a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .left-side .powered-by {
+    margin-top: 50px;
+    font-size: 0.8rem;
+  }
+  
+  /* Right side styles (form section) */
+  .right-side {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .right-side h2 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .right-side p {
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .right-side a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .solar-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .solar-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .solar-form input[type="checkbox"] {
+    width: 10%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  
+  .solar-form label {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .solar-form button {
+    background-color: #0077cc;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .solar-form button:hover {
+    background-color: #005fa3;
+  }
+  
